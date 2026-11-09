@@ -27,6 +27,13 @@ Every night the dataroom lists the commits on this repository's default branch t
 
 This guide defines repository-wide instructions for coding agents working with the Telegram Desktop codebase.
 
+## Nicegram workflows (skills)
+
+- `dataroom-worklog` (`.claude/skills/dataroom-worklog/SKILL.md`, the same file for Codex in
+  `.agents/skills/dataroom-worklog/SKILL.md`): the dataroom protocol's steps for this repository, the work log
+  entry that ends every task and the check for merges no entry names yet. An agent that does not load skills
+  reads that file and follows it.
+
 ## Working from Codex on Windows + WSL
 
 This checkout may be opened in Codex Desktop through the Windows UNC path `\\wsl.localhost\{distro}\home\{user}\Telegram\tdesktop`, while the real Linux path is `/home/{user}/Telegram/tdesktop`. Treat it as a WSL/Linux checkout first, not as a native Windows checkout.
